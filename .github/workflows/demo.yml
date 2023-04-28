@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-      - name: Cache dependencies
+      - name: Cache dependencies #cambio inutil para probar cache
         uses: actions/cache@v3
         with:
           path: ~/.npm
@@ -26,7 +26,7 @@ jobs:
     outputs: 
       script-file: ${{ steps.publish.outputs.script-file }}
     steps:
-      - name: Get code
+      - name: Get code 
         uses: actions/checkout@v3
       - name: Cache dependencies
         uses: actions/cache@v3
